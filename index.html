@@ -51,30 +51,23 @@ layout: default
   </div>
 
   <div class="blog">
-
-    <h1 class="page-heading">500 CHARACTER NOTES</h1>
-
+    <h1 class="page-heading">500 CHARACTER OR LESS NOTES</h1>
     <ul class="post-list">
       {% for post in site.posts %}
         <li>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
           <h1>
             <a class="post-link" href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a>
           </h1>
-
           <p class="post-content">
-            {{ post.content | strip_html }}
+            {{ post.content | strip_html | truncatewords:40 }}
           </p>
-
-          <a href="#" class="read-more">
+          <a href="{{ post.url | prepend: site.github.url }}" class="read-more">
             Read More
           </a>
-
         </li>
       {% endfor %}
     </ul>
-
   </div>
 
 </div>

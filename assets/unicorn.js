@@ -16,10 +16,4 @@ $( ".eventblock" ).hover(
   }
 );
 
-$('.read-more').click(function() {
-  // alert("hi");
-  $(this).parent().find('.post-content').addClass('post-content-full');
-  event.preventDefault();
-});
-
 });
