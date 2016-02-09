@@ -2,12 +2,12 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a class="site-title" href="{{ site.github.url }}/">{{ site.title }}</a>
 
     <a href="http://www.meetup.com/Magical-Unicorns-of-Pittsburgh/" target="_blank">
       <div class="join">
         <span>Join Us:</span>
-        <img src="{{ "/assets/meetup.svg" | prepend: site.baseurl }}" class="badge animated swing" />
+        <img src="{{ "/assets/meetup.svg" | prepend: site.github.url }}" class="badge animated swing" />
       </div>
     </a>
 
@@ -24,7 +24,7 @@
       <div class="trigger">
         {% for my_page in site.pages %}
           {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          <a class="page-link" href="{{ my_page.url | prepend: site.github.url }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
       </div>
