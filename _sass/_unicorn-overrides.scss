@@ -1,0 +1,757 @@
+/* Variables */
+
+$woodsmoke: #0F1215;
+$polar: rgba(255,255,255,.8);
+$base-font: 'Open Sans', sans-serif;
+$brand-font: 'Share Tech', sans-serif;
+$brand-font-written: 'Covered By Your Grace', cursive;
+$quote-font: 'Slabo 27px', serif;
+$mako: #3B444B;
+
+/* Body */
+
+html, body {
+  background-color: $woodsmoke;
+  color: $polar;
+}
+
+a {
+  color: #673ab7;
+  text-decoration: none;
+  &:hover {
+    color: lighten(#673ab7, 10%)!important;
+  }
+}
+
+.icon > svg path {
+    fill: #673ab7;
+}
+
+.cal {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Header */
+
+.site-title {
+  font-family: $brand-font;
+  text-transform: uppercase;
+  color: lighten($mako, 20%);
+  letter-spacing: 1px;
+  font-size: 30px;
+  margin-top: 38px;
+  margin-bottom: 10px;
+  line-height: 30px;
+  text-shadow: 0px 1px 0px black;
+  &:visited {
+    color: lighten($mako, 20%);
+  }
+  &:hover {
+    text-decoration: none;
+    color: lighten($mako, 40%);
+  }
+}
+
+.site-header {
+  border: 0px;
+}
+
+.site-nav {
+  .page-link {
+    color: $mako;
+    &:visited {
+      color: $mako;
+    }
+    &:hover {
+      text-decoration: none;
+      color: lighten($mako, 20%);
+    }
+  }
+}
+
+a {
+  .join {
+    float: right;
+    font-family: $brand-font-written;
+    font-size: 22px;
+    margin-top: 34px;
+    .badge {
+      width: 50px;
+      opacity: .8;
+    }
+  }
+  &:visited {
+    color: $mako;
+  }
+  &:hover {
+    text-decoration: none;
+    color: lighten($mako, 20%);
+    .badge {
+      opacity: 1;
+    }
+  }
+}
+
+/* Quote */
+
+.quote {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #3B444B;
+  text-shadow: 0px 1px 0px black;
+  font-family: 'Slabo 27px', serif;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Event Block */
+
+a.eventblock {
+
+  .venn-bg {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .meetup-bg {
+    background-color: #E0393E;
+    .badge {
+      width: 85px;
+      float: right;
+      opacity: 1;
+      margin-right: -15px;
+      margin-top: -40px;
+      transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+      -webkit-transform: rotate(15deg);
+    }
+  }
+
+  /* Icons */
+
+  .fa-globe, .fa-clock-o {
+    margin-right: 10px;
+  }
+
+  /* Venn */
+
+  .venn-box {
+    background-color: lighten(black, 5%);
+    padding: 40px 40px 40px 40px;
+    .venn {
+      width: 200px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  /* Meetup */
+
+  .meetup {
+    width: 100%;
+    font-family: $brand-font;
+    h1 {
+      font-size: 28px;
+      line-height: 34px;
+      margin-left: 40px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: $polar;
+    }
+    h2 {
+      font-size: 20px;
+      margin-left: 40px;
+      text-transform: uppercase;
+      color: $polar;
+    }
+    span {
+      color: $woodsmoke;
+      margin-left: 6px;
+    }
+  }
+  &:hover {
+    .venn-box {
+      background-color: lighten(black, 10%);
+    }
+    .meetup-bg {
+      background-color: lighten(#E0393E, 2%);
+    }
+  }
+}
+
+.emailblock {
+  font-family: $brand-font;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #00796B;
+  display: block;
+  padding: 40px;
+  text-align: center;
+  h1 {
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: $polar;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  input[type=email] {
+    font-family: 'Open Sans', sans-serif;
+    background-color: transparent;
+    border-bottom: 2px solid $polar;
+    color: $polar;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    font-size: 16px;
+    padding: 20px;
+    outline: none;
+    -webkit-appearance: none;
+    width: 300px;
+    height: 10px;
+  }
+  input[type=submit] {
+    font-family: $brand-font;
+    text-transform: uppercase;
+    border: 0px solid transparent;
+    color: $polar!important;
+    font-size: 20px;
+    padding: 14px;
+    outline: none;
+    -webkit-appearance: none;
+    width: 350px;
+    opacity: .8;
+    margin-top: 20px;
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+  input::-webkit-input-placeholder {
+  	color: $polar;
+  }
+  input::-moz-placeholder {
+  	color: $polar;
+  }
+  input:-moz-placeholder {   /* Older versions of Firefox */
+  	color: $polar;
+  }
+  input:-ms-input-placeholder {
+  	color: $polar;
+  }
+}
+
+.blog {
+  .page-heading {
+    text-align: center;
+    font-family: $brand-font;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: $polar;
+    margin-top: 40px;
+  }
+  .post-list {
+    text-align: center;
+    font-family: $brand-font;
+    .post-meta {
+      color: lighten($mako, 20%);
+      text-transform: uppercase;
+    }
+    .post-link {
+      color: lighten($mako, 20%);
+      text-transform: uppercase;
+      font-size: 28px;
+      line-height: 34px;
+      text-transform: uppercase;
+      &:hover {
+        color: lighten($mako, 40%);
+      }
+    }
+    .post-content {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      line-height: 32px;
+      color: lighten($mako, 5%);
+      margin-bottom: 14px;
+      height: 100px;
+      overflow: hidden;
+    }
+    .post-content-full {
+      height: 200px;
+    }
+    .read-more {
+      font-family: $brand-font;
+      text-transform: uppercase;
+      // border: 0px solid transparent;
+      color: #673ab7;
+      font-size: 20px;
+      padding: 14px;
+      // outline: none;
+      // -webkit-appearance: none;
+      // width: 350px;
+      // opacity: .8;
+      // margin-top: 20px;
+      &:hover {
+        color: lighten(#673ab7, 10%);
+      }
+    }
+  }
+}
+
+.site-footer {
+  background-color: lighten(black, 5%);
+  border: 0px;
+  font-family: 'Open Sans', sans-serif;
+  .footer-heading {
+    font-family: $brand-font;
+    color: lighten($mako, 20%);
+    text-transform: uppercase;
+  }
+  .footer-col-wrapper {
+    color: lighten($mako, 5%);
+  }
+}
+
+/* Unicorn Head */
+@import url(https://fonts.googleapis.com/css?family=Rationale);
+
+
+.button {
+  background-color: #ff8080 !important;
+  border-radius: 0px !important;
+  color: rgba(39, 37, 38, 0.75) !important;
+  animation: btn infinite 100s linear;
+}
+
+.asterisk {
+  animation: ast infinite 100s linear;
+}
+
+#center {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+#center svg {
+  max-width: 50%;
+  height: 350px;
+  margin-bottom: 50px;
+}
+
+path#color_1 {
+  fill: #800000;
+  animation: col_1 infinite 100s linear;
+}
+
+path#color_2 {
+  fill: #aa0000;
+  animation: col_2 infinite 100s linear;
+}
+
+path#color_3 {
+  fill: #d40000;
+  animation: col_3 infinite 100s linear;
+}
+
+path#color_4 {
+  fill: #ff2a2a;
+  animation: col_4 infinite 100s linear;
+}
+
+path#color_5 {
+  fill: #ff8080;
+  animation: col_5 infinite 100s linear;
+}
+
+.u {
+  color: #aa0000;
+  animation: u infinite 100s linear;
+}
+
+.n {
+  color: #ff6600;
+  animation: n infinite 100s linear;
+}
+
+.i {
+  color: #d4aa00;
+  animation: i infinite 100s linear;
+}
+
+.c {
+  color: #89a02c;
+  animation: c infinite 100s linear;
+}
+
+.o {
+  color: #5f8dd3;
+  animation: o infinite 100s linear;
+}
+
+.r {
+  color: #9955ff;
+  animation: r infinite 100s linear;
+}
+
+.n2 {
+  color: #ff80b2;
+  animation: n2 infinite 100s linear;
+}
+
+@keyframes u {
+  0%,
+  100% {
+    color: #aa0000;
+  }
+  14.28% {
+    color: #ff6600;
+  }
+  28.56% {
+    color: #d4aa00;
+  }
+  42.84% {
+    color: #89a02c;
+  }
+  55.12% {
+    color: #5f8dd3;
+  }
+  67.12% {
+    color: #9955ff;
+  }
+  71.4% {
+    color: #ff80b2;
+  }
+}
+
+@keyframes n {
+  0%,
+  100% {
+    color: #ff6600;
+  }
+  14.28% {
+    color: #d4aa00;
+  }
+  28.56% {
+    color: #89a02c;
+  }
+  42.84% {
+    color: #5f8dd3;
+  }
+  55.12% {
+    color: #9955ff;
+  }
+  67.12% {
+    color: #ff80b2;
+  }
+  71.4% {
+    color: #aa0000;
+  }
+}
+
+@keyframes i {
+  0%,
+  100% {
+    color: #d4aa00;
+  }
+  14.28% {
+    color: #89a02c;
+  }
+  28.56% {
+    color: #5f8dd3;
+  }
+  42.84% {
+    color: #9955ff;
+  }
+  55.12% {
+    color: #ff80b2;
+  }
+  67.12% {
+    color: #aa0000;
+  }
+  71.4% {
+    color: #ff6600;
+  }
+}
+
+@keyframes c {
+  0%,
+  100% {
+    color: #89a02c;
+  }
+  14.28% {
+    color: #5f8dd3;
+  }
+  28.56% {
+    color: #9955ff;
+  }
+  42.84% {
+    color: #ff80b2;
+  }
+  55.12% {
+    color: #aa0000;
+  }
+  67.12% {
+    color: #ff6600;
+  }
+  71.4% {
+    color: #d4aa00;
+  }
+}
+
+@keyframes o {
+  0%,
+  100% {
+    color: #5f8dd3;
+  }
+  14.28% {
+    color: #9955ff;
+  }
+  28.56% {
+    color: #ff80b2;
+  }
+  42.84% {
+    color: #aa0000;
+  }
+  55.12% {
+    color: #ff6600;
+  }
+  67.12% {
+    color: #d4aa00;
+  }
+  71.4% {
+    color: #89a02c;
+  }
+}
+
+@keyframes r {
+  0%,
+  100% {
+    color: #9955ff;
+  }
+  14.28% {
+    color: #ff80b2;
+  }
+  28.56% {
+    color: #aa0000;
+  }
+  42.84% {
+    color: #ff6600;
+  }
+  55.12% {
+    color: #d4aa00;
+  }
+  67.12% {
+    color: #89a02c;
+  }
+  71.4% {
+    color: #5f8dd3;
+  }
+}
+
+@keyframes n2 {
+  0%,
+  100% {
+    color: #ff80b2;
+  }
+  14.28% {
+    color: #aa0000;
+  }
+  28.56% {
+    color: #ff6600;
+  }
+  42.84% {
+    color: #d4aa00;
+  }
+  55.12% {
+    color: #89a02c;
+  }
+  67.12% {
+    color: #5f8dd3;
+  }
+  71.4% {
+    color: #9955ff;
+  }
+}
+
+@keyframes col_1 {
+  0%,
+  100% {
+    fill: #800000;
+  }
+  14.28% {
+    fill: #aa4400;
+  }
+  28.56% {
+    fill: #aa8800;
+  }
+  42.84% {
+    fill: #677821;
+  }
+  55.12% {
+    fill: #2c5aa0;
+  }
+  67.12% {
+    fill: #442178;
+  }
+  71.4% {
+    fill: #800033;
+  }
+}
+
+@keyframes col_2 {
+  0%,
+  100% {
+    fill: #aa0000;
+  }
+  14.28% {
+    fill: #d45500;
+  }
+  28.56% {
+    fill: #d4aa00;
+  }
+  42.84% {
+    fill: #89a02c;
+  }
+  55.12% {
+    fill: #3771c8;
+  }
+  67.12% {
+    fill: #7137c8;
+  }
+  71.4% {
+    fill: #d40055;
+  }
+}
+
+@keyframes col_3 {
+  0%,
+  100% {
+    fill: #d40000;
+  }
+  14.28% {
+    fill: #ff6600;
+  }
+  28.56% {
+    fill: #ffcc00;
+  }
+  42.84% {
+    fill: #abc837;
+  }
+  55.12% {
+    fill: #5f8dd3;
+  }
+  67.12% {
+    fill: #8d5fd3;
+  }
+  71.4% {
+    fill: #ff2a7f;
+  }
+}
+
+@keyframes col_4 {
+  0%,
+  100% {
+    fill: #ff2a2a;
+  }
+  14.28% {
+    fill: #ff7f2a;
+  }
+  28.56% {
+    fill: #ffdd55;
+  }
+  42.84% {
+    fill: #bcd35f;
+  }
+  55.12% {
+    fill: #afc6e9;
+  }
+  67.12% {
+    fill: #aa87de;
+  }
+  71.4% {
+    fill: #ff80b2;
+  }
+}
+
+@keyframes col_5 {
+  0%,
+  100% {
+    fill: #ff8080;
+  }
+  14.28% {
+    fill: #ffb380;
+  }
+  28.56% {
+    fill: #ffeeaa;
+  }
+  42.84% {
+    fill: #dde9af;
+  }
+  55.12% {
+    fill: #d7e3f4;
+  }
+  67.12% {
+    fill: #c6afe9;
+  }
+  71.4% {
+    fill: #ffaacc;
+  }
+}
+
+@keyframes btn {
+  0%,
+  100% {
+    background-color: #d40000;
+  }
+  14.28% {
+    background-color: #ff6600;
+  }
+  28.56% {
+    background-color: #ffcc00;
+  }
+  42.84% {
+    background-color: #abc837;
+  }
+  55.12% {
+    background-color: #5f8dd3;
+  }
+  67.12% {
+    background-color: #8d5fd3;
+  }
+  71.4% {
+    background-color: #ff2a7f;
+  }
+}
+
+@keyframes ast {
+  0%,
+  100% {
+    color: #d40000;
+  }
+  14.28% {
+    color: #ff6600;
+  }
+  28.56% {
+    color: #ffcc00;
+  }
+  42.84% {
+    color: #abc837;
+  }
+  55.12% {
+    color: #5f8dd3;
+  }
+  67.12% {
+    color: #8d5fd3;
+  }
+  71.4% {
+    color: #ff2a7f;
+  }
+}
