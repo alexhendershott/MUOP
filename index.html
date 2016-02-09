@@ -12,12 +12,12 @@ layout: default
     <div class="row cal">
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 venn-bg">
         <div class="venn-box">
-          <img src="{{ "/assets/venn.svg" | prepend: site.baseurl }}" class="venn" />
+          <img src="{{ "/assets/venn.svg" | prepend: site.github.url }}" class="venn" />
         </div>
       </div>
       <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 meetup-bg">
         <div class="meetup">
-          <h1><img src="{{ "/assets/meetup.svg" | prepend: site.baseurl }}" class="badge right" />Come Hang Aht With Some Unicorns At the Next Meetup!</h1>
+          <h1><img src="{{ "/assets/meetup.svg" | prepend: site.github.url }}" class="badge right" />Come Hang Aht With Some Unicorns At the Next Meetup!</h1>
           <h2><i class="fa fa-globe"></i>Location:<span>TBD</span></h2>
           <h2><i class="fa fa-clock-o"></i>Time:<span>TBD</span></h2>
         </div>
@@ -60,7 +60,7 @@ layout: default
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
           <h1>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <a class="post-link" href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a>
           </h1>
 
           <p class="post-content">
