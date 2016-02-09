@@ -8,18 +8,18 @@
 
   <!-- JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-  <script src="{{ "/assets/unicorn.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/assets/unicorn.js" | prepend: site.github.url }}"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/assets/animate.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.github.url }}">
+  <link rel="stylesheet" href="{{ "/assets/animate.css" | prepend: site.github.url }}">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  
+
   <!-- Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic|Share+Tech|Slabo+27px' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.github.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.github.url }}">
 </head>
