@@ -186,6 +186,9 @@ a {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 10px;
+    &:before {
+      content: "Get the Latest Unicorn News with The Official MUOP Newsletter";
+    }
   }
   input[type=email] {
     font-family: 'Open Sans', sans-serif;
@@ -798,18 +801,23 @@ path#color_5 {
       display: none;
     }
   }
-  a.eventblock {
-    .meetup-bg {
-
-    }
-    .venn-box {
-
-    }
-  }
 }
 
 // Medium screens
 /* Max-width 641px, Medium Screens */
 @media only screen and (max-width: 40.063em) {
-
+  .email-block {
+    h1 {
+      &:before {
+        content: "Get the MUOP Newsletter";
+      }
+    }
+    input[type=email] {
+      width: 200px;
+      text-align: center;
+    }
+    input[type=submit] {
+      width: 250px;
+    }
+  }
 }
