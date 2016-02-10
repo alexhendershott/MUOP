@@ -193,7 +193,7 @@ a {
   input[type=email] {
     font-family: 'Open Sans', sans-serif;
     background-color: transparent;
-    border-bottom: 2px solid $polar;
+    border-bottom: 1px solid $polar;
     color: $polar;
     border-left: 0px;
     border-right: 0px;
@@ -204,6 +204,7 @@ a {
     -webkit-appearance: none;
     width: 300px;
     height: 10px;
+    font-weight: 300;
   }
   input[type=submit] {
     font-family: $brand-font;
@@ -317,17 +318,36 @@ a {
   background-color: lighten(black, 5%);
   border: 0px;
   font-family: 'Open Sans', sans-serif;
+  color: darken($mako, 5%);
+  font-size: 11px;
   .footer-heading {
     font-family: $brand-font;
     color: lighten($mako, 20%);
     text-transform: uppercase;
-  }
-  .footer-col-wrapper {
-    color: lighten($mako, 5%);
+    font-size: 15px;
   }
   a {
     &:hover {
       color: lighten(#673ab7, 10%)!important;
+    }
+    &:visited {
+      color: #673ab7;
+      text-decoration: none;
+    }
+  }
+  .icon > svg {
+    width: 13px;
+    margin-right: 4px;
+  }
+  .credits {
+    color: darken($mako, 5%);
+    p {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      a {
+        color: #673ab7;
+        text-decoration: none;
+      }
     }
   }
 }

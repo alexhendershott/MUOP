@@ -9,12 +9,24 @@
 title: Magical Unicorns of Pittsburgh
 email: alex.hendershott@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices tristique urna et volutpat.
-  Duis elementum, orci non iaculis efficitur, nisl eros mattis ipsum, sed tristique massa lorem at ligula.
+  MUOP is dedicated to the most in demand and rarest of product team members —
+  someone with excellent interaction design skills, visual design skills, and
+  coding ability. The mythical designer and developer. We create and bring
+  to life. We have a passion for the design of every pixel on the screen, and a
+  passion for making sure that pixel comes to life with functionality that
+  excites anyone who interacts. Join MUOP and network with fellow Unicorns,
+  talk about your experiences, and teach us new skills. We’re a meticulous
+  bunch that never stops learning.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://magicalunicornsofpittsburgh.com" # the base hostname & protocol for your site
-twitter_username: pghunis
-github_username:  pghunis
+twitter_username: pghunicorns
+instagram_username: pghunicorns
+# github_username:  muop
+
+# Sponsors
+sponsor-1-url: http://www.roketco.com
+sponsor-1: Roket - roketco.com
 
 # Build settings
 markdown: kramdown
