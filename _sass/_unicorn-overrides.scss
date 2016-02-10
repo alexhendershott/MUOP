@@ -7,6 +7,7 @@ $brand-font: 'Share Tech', sans-serif;
 $brand-font-written: 'Covered By Your Grace', cursive;
 $quote-font: 'Slabo 27px', serif;
 $mako: #3B444B;
+$cinnabar: #E0393E;
 
 /* Body */
 
@@ -104,90 +105,79 @@ a {
   margin: 0 auto;
 }
 
-/* Event Block */
+/* Meetup Block */
 
-a.eventblock {
-
-  .venn-bg {
-    padding: 0px;
-    margin: 0px;
-  }
-
-  .meetup-bg {
-    background-color: #E0393E;
-    .badge {
-      width: 85px;
-      float: right;
-      opacity: 1;
-      margin-right: -15px;
-      margin-top: -40px;
-      transform: rotate(15deg);
-      -ms-transform: rotate(15deg);
-      -webkit-transform: rotate(15deg);
-    }
-  }
-
-  /* Icons */
-
-  .fa-globe, .fa-clock-o {
-    margin-right: 10px;
-  }
-
-  /* Venn */
-
-  .venn-box {
-    background-color: lighten(black, 5%);
-    padding: 40px 40px 40px 40px;
-    .venn {
-      width: 200px;
-      margin: 0 auto;
-      display: block;
-    }
-  }
-
-  /* Meetup */
-
-  .meetup {
-    width: 100%;
+a {
+  .meetup-block {
+    text-transform: uppercase;
+    color: $polar;
     font-family: $brand-font;
-    h1 {
-      font-size: 28px;
-      line-height: 34px;
-      margin-left: 40px;
-      margin-top: 40px;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      color: $polar;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .left-block {
+      background-color: lighten(black, 5%);
+      height: 275px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 150px;
+      }
     }
-    h2 {
-      font-size: 20px;
-      margin-left: 40px;
-      text-transform: uppercase;
-      color: $polar;
-    }
-    span {
-      color: $woodsmoke;
-      margin-left: 6px;
+    .right-block {
+      background-color: $cinnabar;
+      height: 275px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      position: relative;
+      img {
+        position: absolute;
+        right: -10px;
+        top: 0px;
+        width: 85px;
+        transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg);
+      }
+      h1 {
+        font-size: 28px;
+        line-height: 34px;
+      }
+      h2 {
+        font-size: 20px;
+        line-height: 26px;
+      }
+      span {
+        color: $woodsmoke;
+        margin-left: 6px;
+      }
+      i {
+        margin-right: 10px;
+      }
     }
   }
   &:hover {
-    .venn-box {
+    .left-block {
       background-color: lighten(black, 10%);
     }
-    .meetup-bg {
-      background-color: lighten(#E0393E, 2%);
+    .right-block {
+      background-color: lighten($cinnabar, 2%);
     }
   }
 }
 
-.emailblock {
-  font-family: $brand-font;
-  text-transform: uppercase;
+/* Email Block */
+
+.email-block {
+  height: 275px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background-color: #00796B;
-  display: block;
-  padding: 40px;
-  text-align: center;
+  font-family: $brand-font;
   h1 {
     font-size: 28px;
     line-height: 34px;
@@ -355,7 +345,6 @@ a.eventblock {
 }
 
 #center {
-  width: 50%;
   height: 100%;
   margin: auto;
   text-align: center;
@@ -775,4 +764,52 @@ path#color_5 {
   71.4% {
     color: #ff2a7f;
   }
+}
+
+/* Media Queries */
+
+// XXLarge screens
+/* Max-width 1921px, XXLarge Screens */
+@media only screen and (max-width: 120.063em) {
+
+}
+
+// XLarge screens
+/* Max-width 1441px, XLarge Screens */
+@media only screen and (max-width: 90.063em) {
+
+}
+
+// Large screens
+/* Max-width 1025px, Large Screens */
+@media only screen and (max-width: 64.063em) {
+  .site-title {
+    width: 100%;
+    text-align: center;
+  }
+  a {
+    .join {
+      float: right;
+      font-family: "Covered By Your Grace", cursive;
+      font-size: 22px;
+      margin-top: 34px;
+      width: 100%;
+      margin: 0 auto;
+      display: none;
+    }
+  }
+  a.eventblock {
+    .meetup-bg {
+
+    }
+    .venn-box {
+
+    }
+  }
+}
+
+// Medium screens
+/* Max-width 641px, Medium Screens */
+@media only screen and (max-width: 40.063em) {
+
 }
