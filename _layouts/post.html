@@ -12,4 +12,14 @@ layout: default
     {{ content }}
   </div>
 
+  {% assign author = site.authors[page.author] %}
+	<div class="meta">
+		<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40">
+		<span class="author">{{ author.name }}</span>
+    <a href="mailto:{{author.email}}">{{author.email}}</a>
+    <a href="{{author.web}}" target="_blank">{{author.web}}</a>
+    <a href="{{author.twitter}}" target="_blank">twitter.com/{{author.twitter}}</a>
+    <a href="{{author.github}}" target="_blank">github.com/{{author.github}}</a>
+	</div>
+
 </article>

@@ -320,6 +320,7 @@ a {
   font-family: 'Open Sans', sans-serif;
   color: darken($mako, 5%);
   font-size: 11px;
+  line-height: 20px;
   .footer-heading {
     font-family: $brand-font;
     color: lighten($mako, 20%);
@@ -350,6 +351,12 @@ a {
       }
     }
   }
+}
+
+/* Post Markdown */
+
+.post-author {
+  color: darken($mako, 5%);
 }
 
 /* Unicorn Head */

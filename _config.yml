@@ -30,3 +30,13 @@ sponsor-1: Roket - roketco.com
 
 # Build settings
 markdown: kramdown
+
+# Authors
+authors:
+  alex:
+    name: Alex Hendershott
+    gravatar: 9172a7b203ea64014c2002566f493afb
+    email: alex@roketco.com
+    web: http://www.roketco.com
+    twitter: alexhendershott
+    github: alexhendershott
