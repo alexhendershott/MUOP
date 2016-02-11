@@ -36,7 +36,15 @@ authors:
   alex:
     name: Alex Hendershott
     gravatar: 9172a7b203ea64014c2002566f493afb
+    bio: > # this means to ignore newlines until "email:"
+      Alex is Co-Founder and Technology Lead at <a href="http://roketco.com" target="_blank">Roket</a> — a digital agency
+      fusing entrepreneurial passion and hustle to launch big ideas. We design
+      and develop purpose-built websites and innovative applications for
+      growing brands.
+
     email: alex@roketco.com
     web: http://www.roketco.com
     twitter: alexhendershott
     github: alexhendershott
+    instagram: alexhendershott
+    facebook: alexhendershott

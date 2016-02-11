@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-post
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -13,13 +13,37 @@ layout: default
   </div>
 
   {% assign author = site.authors[page.author] %}
-	<div class="meta">
-		<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40">
-		<span class="author">{{ author.name }}</span>
-    <a href="mailto:{{author.email}}">{{author.email}}</a>
-    <a href="{{author.web}}" target="_blank">{{author.web}}</a>
-    <a href="{{author.twitter}}" target="_blank">twitter.com/{{author.twitter}}</a>
-    <a href="{{author.github}}" target="_blank">github.com/{{author.github}}</a>
+	<div class="author-meta">
+    <h1>About the Author</h1>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 left-block">
+        <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40">
+    		<span class="author">{{ author.name }}</span>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 left-block">
+        <ul>
+          {% if author.twitter %}
+            <li><a href="http://www.twitter.com/{{author.twitter}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          {% endif %}
+          {% if author.instagram %}
+          <li><a href="http://www.instagram.com/{{author.instagram}}" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          {% endif %}
+          {% if author.facebook %}
+          <li><a href="http://www.facebook.com/{{author.facebook}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          {% endif %}
+          {% if author.github %}
+          <li><a href="http://www.github.com/{{author.github}}" target="_blank"><i class="fa fa-github"></i></a></li>
+          {% endif %}
+          {% if author.email %}
+          <li><a href="mailto:{{author.email}}"><i class="fa fa-envelope"></i></a></li>
+          {% endif %}
+          {% if author.web %}
+          <li><a href="{{author.web}}" target="_blank"><i class="fa fa-external-link"></i></a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+    <p>{{author.bio}}</p>
 	</div>
 
 </article>
