@@ -76,19 +76,19 @@ a {
     font-size: 22px;
     margin-top: 34px;
     color: $mako;
+    &:visited {
+      color: $mako;
+    }
+    &:hover {
+      text-decoration: none;
+      color: lighten($mako, 20%)!important;
+      .badge {
+        opacity: 1;
+      }
+    }
     .badge {
       width: 50px;
       opacity: .8;
-    }
-  }
-  &:visited {
-    color: $mako;
-  }
-  &:hover {
-    text-decoration: none;
-    color: lighten($mako, 20%);
-    .badge {
-      opacity: 1;
     }
   }
 }
